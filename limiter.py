@@ -21,7 +21,7 @@ def forward(packet):
     print(f'forward packet:{packet}')
 def drop(packet):
     print(f'drop packet:{packet}')
-x=FixedWindow(1,forward,drop)
+x=FixedWindow(2,forward,drop)
 packet=0
 while packet<10:
     sleep(0.2)
