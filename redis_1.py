@@ -8,7 +8,7 @@ r.set('msg','hello')
 # It’s not really “a copy you keep in Redis” — it’s just the value sent back to your program.
 print(r.get('msg'))
 # EXPIRE: sets a time-to-live (TTL) on a key (in seconds). When that time runs out, Redis deletes the key automatically.
-# r.expire('msg',10)
+r.expire('msg',10)
 # TTL: tells you how many seconds are left before the key expires.
 # Extra useful detail:
 # TTL key = -1 → key exists but no expiry set
